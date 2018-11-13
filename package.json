@@ -15,6 +15,7 @@
   },
   "scripts": {
     "start": "node index",
+    "test": "tape *.test.js util/*.test.js",
     "lint": "standard"
   },
   "pre-commit": [
