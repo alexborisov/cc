@@ -39,7 +39,7 @@ Server runs by default on `localhost:1337`
 }
 ```
 ### Get all cards
-`POST /cards`
+`GET /cards`
 
 ## Testing
 Tests are written using tape and the output is in standard _TAP_ format.
