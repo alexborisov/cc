@@ -5,5 +5,9 @@
   "license": "MIT",
   "devDependencies": {
     "tape": "^4.9.1"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
   }
 }
