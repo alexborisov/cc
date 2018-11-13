@@ -14,8 +14,8 @@
     "supertest": "^3.3.0"
   },
   "scripts": {
-    "start": "node index",
-    "test": "tape *.test.js util/*.test.js",
+    "start": "node app",
+    "test": "tape app/**/*.test.js",
     "lint": "standard"
   },
   "pre-commit": [
