@@ -1,16 +1,16 @@
 const express = require('express')
 const morgan = require('morgan')
-const api = require('./api')
+const routes = require('./routes')
 
 const app = express()
 
 app.use(morgan('dev'))
 app.use(express.json())
-app.use('/', api)
+app.use('/', routes)
 
 app.all('*', (req, res) => {
-  res.statusCode = 404;
-  res.send({message: 'resource not found'})
+  res.statusCode = 404
+  res.send({ message: 'resource not found' })
 })
 
 module.exports = app
